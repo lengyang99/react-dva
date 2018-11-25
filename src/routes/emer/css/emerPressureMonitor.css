@@ -1,0 +1,38 @@
+.left {
+  width: 16px;
+  height: 32px;
+  padding-top: 8px;
+  top: 75px;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.left:hover {
+  background-color: #188FFE;
+  opacity: 0.5;
+}
+
+.right {
+  width: 16px;
+  height: 32px;
+  padding-top: 8px;
+  top: 75px;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.right:hover {
+  background-color: #188FFE;
+  opacity: 0.5;
+}
+
+.noData {
+  width: 330px;
+  height: 165px;
+  text-align: center;
+  line-height: 165px;
+}

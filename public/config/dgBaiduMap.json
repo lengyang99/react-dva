@@ -1,0 +1,129 @@
+{
+  "centerx": -1,
+  "centery": -1,
+  "initlevel": -1,
+  "extent": {
+    "xmin": 113.366139,
+    "ymin": 22.6545,
+    "xmax": 114.325098,
+    "ymax": 23.456816
+  },
+  "isxy": 0,
+  "isMapTool" :0,
+  "wkid": 3857,
+  "isJwd": 0,
+  "overview": 0,
+  "scale": 0,
+  "position": 1,
+  "positionPrefix": {
+    "x": "x",
+    "y": "y"
+  },
+  "map_base": [{
+    "group": "m_1",
+    "visible": 1,
+    "maps": [{
+      "id": "dg_base_map",
+      "url": "http://10.39.1.254:8022/ServiceEngine/rest/services/dgBDRoad/MapServer",
+      "type": "tiled",
+      "name": "电子地图",
+      "visible": 1,
+      "extent": {
+        "xmin": 113.366139,
+        "ymin": 22.6545,
+        "xmax": 114.325098,
+        "ymax": 23.456816
+      },
+      "params": {
+        "imgurl": "",
+        "legendurl": "",
+        "maxscale": "",
+        "minscale": ""
+      }
+    }]
+  }],
+  "map_service": [{
+    "group": "n_1",
+    "visible": 1,
+    "mutexMapIds": [["gw_gl", "gw_gj", "gw_gc", "gw_pressure"]],
+    "maps": [{
+      "id": "net_lfjsd",
+      "url": "http://10.39.1.106:6080/arcgis/rest/services/dgxa/dggw_bd/MapServer",
+      "type": "dynamic",
+      "name": "东莞管网",
+      "visible": 1,
+      "layerInfos": [{
+        "id": "1",
+        "name": "管点类型",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"}
+        ]
+      }, {
+        "id": "2",
+        "name": "管点类型",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"}
+        ]
+      }, {
+        "id": "4",
+        "name": "管点类型",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"}
+        ]
+      }, {
+        "id": "5",
+        "name": "所有管段",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "MATERIAL", "firstDesc": "材质"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "EQPTSTATUS", "firstDesc": "设备状态"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"}
+        ]
+      }, {
+        "id": "7",
+        "name": "高压、中压管段",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "MATERIAL", "firstDesc": "材质"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "EQPTSTATUS", "firstDesc": "设备状态"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"}
+        ]
+      }, {
+        "id": "9",
+        "name": "高压管段",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "MATERIAL", "firstDesc": "材质"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "EQPTSTATUS", "firstDesc": "设备状态"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"}
+        ]
+      }],
+      "params": {
+        "maxscale": "0",
+        "minscale": "200000",
+        "snapLayers": "",
+        "layersName": []
+      }
+    }]
+  }],
+  "map_thematic": [{
+    "group": "t_1",
+    "visible": 0,
+    "maps": []
+  }]
+}

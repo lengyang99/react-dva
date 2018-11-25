@@ -1,0 +1,31 @@
+@import "../../styles/variable";
+
+.malfunction {
+  &__toolbar {
+    //height: 70px;
+    line-height: 70px;
+  }
+  &__search {
+    width: 300px;
+    margin-right: 20px;
+    display: inline-block;
+    & > label {
+      padding-right: 10px;
+      color: @mainFontColor;
+      float: left;
+    }
+    &__input {
+      width: 83%;
+      display: inline-block;
+      margin-bottom: 18px;
+      margin-top: 10px;
+    }
+  }
+  &__btns {
+    display: inline-block;
+    position: absolute;
+  }
+  &__button {
+    margin-right: 8px;
+  }
+}

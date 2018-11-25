@@ -1,0 +1,39 @@
+.StepView{
+    left: calc(50% - 300px);
+    /* width: 560px; */
+    position: absolute;
+    display: flex;
+    padding-right: 20px;
+    background-image: url(../../../../../public/images/bar.png);
+    background-size: 100% 100%;
+}
+
+.StepView_greed{
+    background-image: url(../../../../../public/images/绿点.png);
+    float: left;
+    display: flex;
+    margin-left: 15px;
+    padding-left: 10px;
+    background-position: 0px 20px;
+    background-repeat: no-repeat;
+}
+
+.StepView_red{
+    background-image: url(../../../../../public/images/红点.png);
+    float: left;
+    display: flex;
+    margin-left: 15px;
+    padding-left: 10px;
+    background-position: 0px 20px;
+    background-repeat: no-repeat;
+}
+
+.StepSpan{
+    color : #ffffff;
+}
+
+.StepSpan :last-child{
+    width: 50px;
+    color : #ffffff;
+}
+

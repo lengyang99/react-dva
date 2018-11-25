@@ -1,0 +1,16 @@
+.rowBackgroundColor {
+  animation: myfirst 2s;
+  -moz-animation: myfirst 2s;	/* Firefox */
+  -webkit-animation: myfirst 2s;	/* Safari 和 Chrome */
+  -o-animation: myfirst 2s;	/* Opera */
+}
+
+@keyframes myfirst {
+  0% { background: #1f3b66; }
+  16% { background: #1890ff; }
+  32% { background: #1f3b66; }
+  48% { background: #1890ff; }
+  64% { background: #1f3b66; }
+  82% { background: #1890ff; }
+  100% { background: #1f3b66; }
+}

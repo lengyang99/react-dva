@@ -1,0 +1,105 @@
+.emerWarning {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 280px;
+  height: 150px;
+  background-color: white;
+  font-size: 14px;
+  color: black;
+  padding: 0 11px 0 8px;
+  overflow: hidden;
+  z-index: 1;
+}
+.emerEventReporte{
+  position: absolute;
+  right: 283px;
+  bottom: 0;
+  width: 280px;
+  height: 150px;
+  background-color: white;
+  font-size: 14px;
+  color: black;
+  padding: 0 11px 0 8px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.warningTitle {
+  width: 313px;
+  height: 32px;
+  background-image: url(../../../../public/images/emer/提示标题栏.png);
+  padding-left: 41px;
+  margin-left: -41px;
+}
+
+.warningTitle span {
+  display: inline-block;
+}
+
+.wt_1 span {
+  height: 32px;
+  line-height: 32px;
+  margin-left: 16px;
+  color: white;
+}
+
+.wt_1 img {
+  position: relative;
+  top: -1px;
+}
+
+.wt_2 {
+  /* width: 95px; */
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 61px;
+  padding: 0 9px;
+  background: white;
+  color: #C1954D;
+  cursor: pointer;
+}
+
+.wt_2 img {
+  margin-right: 10px;
+  position: relative;
+  top: -1px;
+}
+
+.wt_2:hover {
+  box-shadow: 0 0 2px #fff;
+  opacity: 0.9;
+}
+
+.wt_3 {
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.wt_3:hover {
+  opacity: 0.75;
+}
+
+.warningInfo {
+  margin-top: 11px;
+}
+
+.warningInfo span {
+  display: block;
+}
+
+.warningInfo .wi {
+  margin-top: 8px;
+  margin-left: 14px;
+}
+
+.warningInfo .wi {
+  color: #f00;
+}
+
+.warningInfo .wi:last-child {
+  margin-top: 5px;
+  color: #fff;
+}
+

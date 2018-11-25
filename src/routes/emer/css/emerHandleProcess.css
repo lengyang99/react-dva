@@ -1,0 +1,181 @@
+.emerEvent {
+  position: absolute;
+  top: 37px;
+  right: -5px;
+  width: 357px;
+  border: 15px solid #FFFFFF;
+  border-image: url(../../../../public/images/emer/cardBottomBlock.png) 15 15 17 15 fill round;
+  color: #FFFFFF;
+  z-index: 1;
+}
+
+.leftViewTitle {
+  position: absolute;
+  top: -13px;
+  left: -13px;
+  width: 353px;
+  height: 36px;
+  background-image: url(../../../../public/images/emer/title.png);
+  background-size: 100% 100%;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+
+/* .leftViewTitle img {
+  height: 14px;
+  margin: 0 15px;
+} */
+
+.firstImg{
+  height: 14px;
+  margin-left: 55%;
+}
+.TwoImg{
+  height: 14px;
+  margin-right: 25px;
+}
+
+.leftMain {
+  padding-left: 15px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 145px;
+  margin-top: 49px;
+  box-sizing: box-border;
+}
+
+.leftMain > p {
+  position: relative;
+  margin-top: 18px;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.leftMain > p:nth-child(1) {
+  margin-top: 0px;
+}
+
+.leftMain > p > img {
+  display: inline-block;
+    margin-right: 10px;
+    position: absolute;
+    left: 0px;
+    top: 8px;
+}
+
+.leftMain > p > div {
+  position: absolute;
+  width: 2px;
+  height: calc(100% + 18px);
+  background: #ccc;
+  left: 3px;
+  margin-top: -6px;
+  top: 22px;
+}
+
+.leftMain > p > span {
+  display: inline-block;
+  background: #1890ff;
+  margin: 0 8px;
+  padding: 0 2px;
+  border-radius: 4px;
+}
+
+#link {
+  display: inline-block;
+  width: 130px;
+  margin-top: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 12px;
+}
+
+#pic {
+  display: block;
+  margin-left: 25%;
+  margin-top: 8px;
+  width: 65%;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.leftMain::-webkit-scrollbar {
+  width: 5px;
+  background-color: #FFFFFF;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+.leftMain::-webkit-scrollbar-track {
+  background-color: rgba(7, 41, 88, 1);
+}
+
+/*定义滑块 内阴影+圆角*/
+.leftMain::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #8A95A7;
+}
+
+.Modal {
+  padding: 0;
+  margin: 65px 437px 0 0;
+  height: 300px;
+}
+
+.emerEvent1 {
+  width: 587px;
+  z-index: 2;
+  box-sizing: box-border;
+}
+
+.hide {
+  display: none;
+}
+
+.emerEvent1 > div {
+  overflow: hidden;
+  padding: 35px 22px;
+  background: white;
+}
+
+.emerEvent1 > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.emerEvent1 > div > div > img {
+  width: 88%;
+}
+
+.footer {
+  width: 100%;
+  height: 16px;
+  box-sizing: box-border;
+  padding: 15px 6%;
+}
+
+.footer > .textRight {
+  float: right;
+}
+
+.footer > span {
+  display: inline-block;
+}
+
+.footer > span:nth-child(1) {
+  margin-right: 30px;
+  position: relative;
+  top: -5px;
+}
+
+.footer > span:nth-child(2) {
+  margin-right: 25px;
+  width: 145px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

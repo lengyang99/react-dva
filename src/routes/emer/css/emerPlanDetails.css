@@ -1,0 +1,32 @@
+.detailsItemWrapper {
+  margin: 10px;
+  font-size: 14px;
+}
+
+.detailsItemWrapper div {
+  margin: 3px 0;
+}
+
+.detailsItemWrapper div:last-child {
+  margin: 0;
+}
+
+a#a_download {
+  display: inline-block;
+  border: 1px solid #1E8AE5;
+  width: 45px;
+  height: 18px;
+  background-color: #fff;
+  line-height: 18px;
+  text-align: center;
+  font-size: 13px;
+  color: #1E8AE5;
+  margin-left: 15px;
+  margin-top: 4px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+a#a_download:hover {
+  opacity: 0.75;
+}

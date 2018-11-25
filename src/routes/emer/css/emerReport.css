@@ -1,0 +1,28 @@
+.blockTitle {
+  font-size: 14px;
+  font-weight: bold;
+  border-left: 3px solid dodgerblue;
+  padding: 0 5px;
+  margin: 5px 0;
+
+}
+
+.block {
+  display: inline-block;
+  min-width: 100px;
+  margin-right: 10px;
+}
+
+.block2 {
+  display: inline-block;
+  margin-right: 10px;
+  min-width: 48%;
+}
+
+.row {
+  padding: 4px 0;
+}
+
+.record {
+  padding: 5px;
+}

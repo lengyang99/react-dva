@@ -1,0 +1,706 @@
+{
+  "centerx": -1,
+  "centery": -1,
+  "initlevel": -1,
+  "extent": {
+    "xmin": 12967375.327355506,
+    "ymin": 4790556.863335548,
+    "xmax": 13008383.793030446,
+    "ymax": 4808443.127954256
+  },
+  "wkid": 3857,
+  "isxy": 1,
+  "isJwd": 0,
+  "overview": 0,
+  "scale": 0,
+  "position": 1,
+  "positionPrefix": {
+    "x": "x",
+    "y": "y"
+  },
+  "isProxy": 1,
+  "map_base": [{
+    "group": "m_1",
+    "visible": 1,
+    "maps": [{
+      "id": "lf_base_map",
+      "url": "mapServer/arcgis/rest/services/xagis/dx_grid84/MapServer",
+      "type": "tiled",
+      "name": "电子地图",
+      "visible": 1,
+      "extent": {
+        "xmin": 12967375.327355506,
+        "ymin": 4790556.863335548,
+        "xmax": 13008383.793030446,
+        "ymax": 4808443.127954256
+      },
+      "params": {
+        "imgurl": "",
+        "legendurl": "",
+        "maxscale": "",
+        "minscale": ""
+      }
+    }, {
+      "id": "lf_dxt_map",
+      "url": "mapServer/arcgis/rest/services/xagis/dx_84/MapServer",
+      "type": "tiled",
+      "name": "地形地图",
+      "visible": 0,
+      "extent": {
+        "xmin": 12970135.904914,
+        "ymin": 4791760.917666746,
+        "xmax": 13005623.215471953,
+        "ymax": 4807239.073623057
+      },
+      "params": {
+        "imgurl": "",
+        "legendurl": "",
+        "maxscale": "",
+        "minscale": ""
+      }
+    }]
+  }],
+  "map_service": [{
+    "group": "n_1",
+    "visible": 1,
+    "mutexMapIds": [["gw_gl", "gw_gj", "gw_gc", "gw_pressure"]],
+    "maps": [{
+      "id": "gw_gl",
+      "url": "dgPipeClick/arcgis/rest/services/xagis/LF0011_GL_MCT84_D/MapServer",
+      "type": "dynamic",
+      "name": "管网 - 管龄",
+      "visible": 0,
+      "layerInfos": [{
+        "id": "6",
+        "name": "2000年以前",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "7",
+        "name": "2000年-2010年",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "8",
+        "name": "2010年至今",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "9",
+        "name": "未知埋设年代",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "11",
+        "name": "2000年以前",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "12",
+        "name": "2000年-2010年",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "14",
+        "name": "2000年以前",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "4",
+        "name": "管点类型",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "COMPANYNAME", "firstDesc": "所属公司"},
+          {"first": "MODEL", "firstDesc": "型号"},
+          {"first": "SPECIFICATION", "firstDesc": "规格"},
+          {"first": "PRESSURELEVLE", "firstDesc": "压力级别"},
+          {"first": "INSTALLATIONWAY", "firstDesc": "安装方式"},
+          {"first": "CONNECTIONMETHOD", "firstDesc": "连接方式"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "施工日期", "firstDesc": "施工日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "2",
+        "name": "管点类型",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "COMPANYNAME", "firstDesc": "所属公司"},
+          {"first": "MODEL", "firstDesc": "型号"},
+          {"first": "SPECIFICATION", "firstDesc": "规格"},
+          {"first": "PRESSURELEVLE", "firstDesc": "压力级别"},
+          {"first": "INSTALLATIONWAY", "firstDesc": "安装方式"},
+          {"first": "CONNECTIONMETHOD", "firstDesc": "连接方式"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "施工日期", "firstDesc": "施工日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "1",
+        "name": "管点类型",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "COMPANYNAME", "firstDesc": "所属公司"},
+          {"first": "MODEL", "firstDesc": "型号"},
+          {"first": "SPECIFICATION", "firstDesc": "规格"},
+          {"first": "PRESSURELEVLE", "firstDesc": "压力级别"},
+          {"first": "INSTALLATIONWAY", "firstDesc": "安装方式"},
+          {"first": "CONNECTIONMETHOD", "firstDesc": "连接方式"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "施工日期", "firstDesc": "施工日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }],
+      "params": {
+        "maxscale": "",
+        "minscale": "",
+        "snapLayers": "",
+        "layersName": []
+      }
+    }, {
+      "id": "gw_gj",
+      "url": "mapServer/arcgis/rest/services/xagis/lfgw_84gj/MapServer",
+      "type": "dynamic",
+      "name": "管网 - 管径",
+      "visible": 0,
+      "layerInfos": [{
+        "id": "6",
+        "name": "管径>200mm",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "8",
+        "name": "管径>99mm",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "10",
+        "name": "管径>0mm",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "12",
+        "name": "未知管径大小",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "4",
+        "name": "管点类型",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "COMPANYNAME", "firstDesc": "所属公司"},
+          {"first": "MODEL", "firstDesc": "型号"},
+          {"first": "SPECIFICATION", "firstDesc": "规格"},
+          {"first": "PRESSURELEVLE", "firstDesc": "压力级别"},
+          {"first": "INSTALLATIONWAY", "firstDesc": "安装方式"},
+          {"first": "CONNECTIONMETHOD", "firstDesc": "连接方式"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "施工日期", "firstDesc": "施工日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "2",
+        "name": "管点类型",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "COMPANYNAME", "firstDesc": "所属公司"},
+          {"first": "MODEL", "firstDesc": "型号"},
+          {"first": "SPECIFICATION", "firstDesc": "规格"},
+          {"first": "PRESSURELEVLE", "firstDesc": "压力级别"},
+          {"first": "INSTALLATIONWAY", "firstDesc": "安装方式"},
+          {"first": "CONNECTIONMETHOD", "firstDesc": "连接方式"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "施工日期", "firstDesc": "施工日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "1",
+        "name": "管点类型",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "COMPANYNAME", "firstDesc": "所属公司"},
+          {"first": "MODEL", "firstDesc": "型号"},
+          {"first": "SPECIFICATION", "firstDesc": "规格"},
+          {"first": "PRESSURELEVLE", "firstDesc": "压力级别"},
+          {"first": "INSTALLATIONWAY", "firstDesc": "安装方式"},
+          {"first": "CONNECTIONMETHOD", "firstDesc": "连接方式"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "施工日期", "firstDesc": "施工日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }],
+      "params": {
+        "maxscale": "",
+        "minscale": "",
+        "snapLayers": "",
+        "layersName": []
+      }
+    }, {
+      "id": "gw_gc",
+      "url": "mapServer/arcgis/rest/services/xagis/lfgw_84gc/MapServer",
+      "type": "dynamic",
+      "name": "管网 - 管材",
+      "visible": 0,
+      "layerInfos": [{
+        "id": "11",
+        "name": "管径>200mm",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "9",
+        "name": "管径>99mm",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "7",
+        "name": "管径>0mm",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "6",
+        "name": "管径<0.00mm",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "4",
+        "name": "管点类型",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "COMPANYNAME", "firstDesc": "所属公司"},
+          {"first": "MODEL", "firstDesc": "型号"},
+          {"first": "SPECIFICATION", "firstDesc": "规格"},
+          {"first": "PRESSURELEVLE", "firstDesc": "压力级别"},
+          {"first": "INSTALLATIONWAY", "firstDesc": "安装方式"},
+          {"first": "CONNECTIONMETHOD", "firstDesc": "连接方式"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "施工日期", "firstDesc": "施工日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "2",
+        "name": "管点类型",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "COMPANYNAME", "firstDesc": "所属公司"},
+          {"first": "MODEL", "firstDesc": "型号"},
+          {"first": "SPECIFICATION", "firstDesc": "规格"},
+          {"first": "PRESSURELEVLE", "firstDesc": "压力级别"},
+          {"first": "INSTALLATIONWAY", "firstDesc": "安装方式"},
+          {"first": "CONNECTIONMETHOD", "firstDesc": "连接方式"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "施工日期", "firstDesc": "施工日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "1",
+        "name": "管点类型",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "COMPANYNAME", "firstDesc": "所属公司"},
+          {"first": "MODEL", "firstDesc": "型号"},
+          {"first": "SPECIFICATION", "firstDesc": "规格"},
+          {"first": "PRESSURELEVLE", "firstDesc": "压力级别"},
+          {"first": "INSTALLATIONWAY", "firstDesc": "安装方式"},
+          {"first": "CONNECTIONMETHOD", "firstDesc": "连接方式"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "施工日期", "firstDesc": "施工日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }],
+      "params": {
+        "maxscale": "",
+        "minscale": "",
+        "snapLayers": "",
+        "layersName": []
+      }
+    }, {
+      "id": "gw_pressure",
+      "url": "dgPipeClick/arcgis/rest/services/xagis/LF0011_GW_MCT84_D/MapServer",
+      "type": "dynamic",
+      "name": "管网 - 压力级别",
+      "visible": 1,
+      "layerInfos": [{
+        "id": "6",
+        "name": "所有管段",
+        "fields": [
+          {"first": "eqptcode", "firstDesc": "设备编码"},
+          {"first": "eqpttype", "firstDesc": "设备种类"},
+          {"first": "pipelength", "firstDesc": "管长"},
+          {"first": "pipediam", "firstDesc": "管径"},
+          {"first": "pressurerating", "firstDesc": "压力级别"},
+          {"first": "pipematerial", "firstDesc": "管材"},
+          {"first": "wallthickness", "firstDesc": "壁厚"},
+          {"first": "pipelinelayingmethod", "firstDesc": "敷设方法"},
+          {"first": "corrosionprotectiontype", "firstDesc": "防腐方法"},
+          {"first": "location", "firstDesc": "位置"},
+          {"first": "burieddate", "firstDesc": "埋设日期"},
+          {"first": "installedby", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "8",
+        "name": "中压、高压",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "10",
+        "name": "高压",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "1",
+        "name": "管点类型",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "3",
+        "name": "管点类型",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }, {
+        "id": "4",
+        "name": "gispro.public.y_gis0011_mc_nod",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "EQPTTYPE", "firstDesc": "设备种类"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "MATERIAL", "firstDesc": "管材"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "PIPELINELAYINGMETHOD", "firstDesc": "敷设方法"},
+          {"first": "CORROSIONPROTECTIONTYPE", "firstDesc": "防腐方法"},
+          {"first": "LOCATION", "firstDesc": "位置"},
+          {"first": "BURIEDDATE", "firstDesc": "埋设日期"},
+          {"first": "INSTALLEDBY", "firstDesc": "施工单位"}
+        ]
+      }],
+      "params": {
+        "maxscale": "",
+        "minscale": "",
+        "snapLayers": "",
+        "layersName": []
+      }
+    }]
+  }],
+  "map_thematic": [{
+    "group": "t_1",
+    "visible": 0,
+    "maps": [{
+      "id": "hiddenDanger",
+      "url": "/proxy/event/MapDisplay",
+      "type": "graphic",
+      "name": "隐患",
+      "visible": 0,
+      "showWoDetail": 1,
+      "pictureUrl": "images/map/graphic/hiddenDanger.png",
+      "pictureWidth": 25,
+      "pictureHeight": 25,
+      "params": {
+        "eventtype": 2
+      }
+    }, {
+      "id": "fault",
+      "url": "/proxy/event/MapDisplay",
+      "type": "graphic",
+      "name": "故障",
+      "visible": 0,
+      "showWoDetail": 1,
+      "pictureUrl": "images/map/graphic/fault.png",
+      "pictureWidth": 25,
+      "pictureHeight": 25,
+      "params": {
+        "eventtype": 1
+      }
+    }, {
+      "id": "construction",
+      "url": "/proxy/event/MapDisplay",
+      "type": "graphic",
+      "name": "第三方施工",
+      "visible": 0,
+      "showWoDetail": 1,
+      "pictureInfo": {
+        "fieldName": "controlLevel",
+        "picCfg": [
+          {"value": "10060002", "url": "images/map/graphic/construction.png"},
+          {"value": "10060001", "url": "images/map/graphic/construction2.png"}
+        ]
+      },
+      "pictureUrl": "images/map/graphic/construction.png",
+      "pictureWidth": 25,
+      "pictureHeight": 25,
+      "params": {
+        "eventtype": 0
+      }
+    },{
+      "id": "areas",
+      "url": "/proxy/patrol/area/getAreaListByStation",
+      "type": "graphic",
+      "name": "区域",
+      "visible": 0,
+      "pictureUrl": "images/map/graphic/construction.png",
+      "pictureWidth": 25,
+      "pictureHeight": 25,
+      "params": {
+      }
+    },{
+      "id": "personTrack",
+      "url": "/proxy/event/MapDisplay",
+      "type": "graphic",
+      "name": "人员位置",
+      "visible": 0,
+      "pictureUrl": "images/map/graphic/construction.png",
+      "pictureWidth": 25,
+      "pictureHeight": 25,
+      "params": {
+      }
+    },{
+      "id": "carMonitor",
+      "url": "/proxy/emer/location/getEmerTempCar",
+      "type": "graphic",
+      "name": "车辆监控",
+      "visible": 0,
+      "pictureUrl": "images/map/graphic/car.gif",
+      "pictureWidth": 42,
+      "pictureHeight": 32,
+      "params": {
+      }
+    }]
+  }]
+}

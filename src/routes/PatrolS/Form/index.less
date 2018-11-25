@@ -1,0 +1,154 @@
+@import "~antd/lib/style/themes/default.less";
+.table {
+  border: solid 1px #000;
+  text-align: center;
+  line-height: 30px;
+  border-collapse: collapse;
+}
+
+.table tr {
+  height: 30px;
+  width: 100%;
+}
+
+.table tr td {
+  border: solid 1px #000;
+}
+
+.firstCol {
+  width: 85px;
+}
+
+.table input[type='button'] {
+  width: 50px;
+  line-height: 22px;
+  height: 22px;
+  margin: 10px;
+}
+
+.show {
+  display: table-row;
+}
+
+.show span {
+  height: 24px;
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.select_panel_span {
+  float: left;
+  display: block;
+  width: 45px;
+  margin: 10px;
+  padding: 2px;
+  border-radius: 15px;
+}
+
+.select_panel_span_selected {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.select_panel_div {
+  float: left;
+  margin: 2px;
+  /*margin-left: 5px;*/
+  /*width: auto;*/
+  height: 20px;
+  /*border-radius: 10px;*/
+  /*padding-left: 10px;*/
+  /*padding-right: 10px;*/
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.starSpan {
+  float: right;
+  width: 10px;
+  height: 28px;
+  display: block;
+  line-height: 28px;
+  padding-left: 6px;
+  padding-top: 2px;
+  color: red;
+}
+
+.chk_star{
+  margin-top: -5px;
+}
+
+.textOverflow {
+  // display: inline-block;
+  width: 200px;
+  // height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  white-space: nowrap;
+}
+.textOverflowPipe {
+  // display: inline-block;
+  // width: 200px;
+  // height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  white-space: nowrap;
+}
+
+.temp{
+  :global{
+    .ant-tooltip-inner{
+      word-break: break-all;
+    }
+    .ant-table td { white-space: nowrap; }
+  
+    .ant-table-tbody tr td {
+      // word-break: break-word;
+      height: 40px;
+    }
+  
+    .ant-table-thead tr th {
+      height: 40px;
+    }
+  
+    .ant-table-fixed-header .ant-table-content .ant-table-scroll .ant-table-body{
+      overflow-x: hidden;
+    }
+  }
+}
+.spin{
+  :global{
+    .ant-spin-spinning {
+      position: absolute;
+      width: 100%;
+      height: calc(~'100vh - 120px');
+      top: 0;
+      z-index: 3000;
+      padding-top: 150px;
+    }
+  }
+}
+
+.routine {
+  width: auto;
+  min-width: 200px;
+  height: auto;
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  margin-right: 125px;
+  background-color: rgba(12, 138, 254, 0.89);
+  padding: 8px;
+
+  p {
+    margin-bottom: 4px;
+    margin-top: 0;
+    color: white;
+  }
+}

@@ -1,0 +1,18 @@
+/*
+ * @desc mixin
+ */
+.select(@width: 200px, @marginLeft: 10px, @marginRight: 20px) {
+  width: @width;
+  margin-left: @marginLeft;
+  margin-right: @marginRight;
+}
+
+.container {
+  margin-bottom: 20px;
+  .sponsor {
+    .select();
+  }
+  .coordinator {
+    .select(300px);
+  }
+}

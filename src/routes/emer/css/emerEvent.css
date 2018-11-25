@@ -1,0 +1,84 @@
+.emerEvent {
+  position: absolute;
+  top: 467px;
+  /* top: 238px; */
+  left: 8px;
+  width: 357px;
+  height: 225px;
+  border: 15px solid #FFFFFF;
+  border-image: url(../../../../public/images/emer/cardBottomBlock.png) 15 15 17 15 fill round;
+  color: #FFFFFF;
+  z-index: 1;
+}
+
+.leftViewTitle {
+  position: absolute;
+  top: -13px;
+  left: -13px;
+  width: 353px;
+  height: 36px;
+  background-image: url(../../../../public/images/emer/title.png);
+  font-size: 14px;
+  text-align: left;
+  padding-left: 20px;
+  background-size: 100% 100%;
+  line-height: 36px;
+}
+
+#emerEventList {
+  position: absolute;
+  top: 50px;
+  width: 320px;
+  height: 152px;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-top: -7px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.emerEventInfo {
+  border-bottom: 1px solid #023777;
+  margin: 7px 0 5px 8px;
+}
+
+#emerEventList div:first-child {
+  margin-top: 0;
+}
+
+.emerEventInfo div {
+  margin-bottom: 3px;
+}
+
+.emerEventInfo .emerEventItem {
+  width: 300px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.emerEventInfo div:last-child {
+  margin-bottom: 5px;
+}
+
+.emerEventInfo div span {
+  margin-left: 11px;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+#emerEventList::-webkit-scrollbar {
+  width: 5px;
+  background-color: #FFFFFF;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+#emerEventList::-webkit-scrollbar-track {
+  background-color: rgba(7, 41, 88, 1);
+}
+
+/*定义滑块 内阴影+圆角*/
+#emerEventList::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #8A95A7;
+}

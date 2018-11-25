@@ -1,0 +1,169 @@
+﻿{
+  "title": "XXX系统",
+  "logo": "./images/header/logo.png",
+  "ico": "favicon.ico",
+  "message": "global title",
+  "cfgs": [
+    {
+      "key": "mapcfg",
+      "ecode": "0011",
+      "cityName": "廊坊",
+      "mapType":"base",
+      "url": "./config/mapcfg.json",
+      "pattern": "pattern0",
+      "loaded": true
+    },
+    {
+      "key": "lfBaiduMap",
+      "ecode": "0011",
+      "cityName": "廊坊",
+      "mapType":"emer",
+      "url": "./config/lfBaiduMap.json",
+      "pattern": "pattern0",
+      "loaded": true
+    },
+    {
+      "key": "dgBaiduMap",
+      "ecode": "0611",
+      "cityName": "东莞",
+      "mapType":"emer",
+      "url": "./config/dgBaiduMap.json",
+      "pattern": "pattern1",
+      "loaded": true
+    },
+    {
+      "key": "qinDaoMapcfg",
+      "ecode": "0161",
+      "cityName": "青岛",
+      "mapType":"base",
+      "url": "./config/qinDaoMapcfg.json",
+      "pattern": "pattern0",
+      "loaded": true
+    },
+    {
+      "key": "luoyangMapcfg",
+      "ecode": "0531",
+      "cityName": "洛阳",
+      "mapType":"base",
+      "url": "./config/luoyangMapCfg.json",
+      "pattern": "pattern0",
+      "loaded": true
+    },
+    {
+      "key": "dongguanMapcfg",
+      "ecode": "0611",
+      "cityName": "东莞",
+      "mapType":"base",
+      "url": "./config/dongguanMapCfg.json",
+      "pattern": "pattern0",
+      "loaded": true
+    },
+    {
+      "key": "bengbuMapCfg",
+      "ecode": "0072",
+      "cityName": "蚌埠",
+      "mapType":"base",
+      "url": "./config/bengbuMapCfg.json",
+      "pattern": "pattern0",
+      "loaded": true
+    },
+    {
+      "key": "huzhouMapCfg",
+      "ecode": "0601",
+      "cityName": "湖州",
+      "mapType":"base",
+      "url": "./config/huzhouMapCfg.json",
+      "pattern": "pattern0",
+      "loaded": true
+    },
+    {
+      "key": "kaifengMapCfg",
+      "ecode": "0061",
+      "cityName": "开封",
+      "mapType":"base",
+      "url": "./config/kaifengMapCfg.json",
+      "pattern": "pattern0",
+      "loaded": true
+    },
+    {
+      "key": "quanzhouMapCfg",
+      "ecode": "0251",
+      "cityName": "泉州",
+      "mapType":"base",
+      "url": "./config/quanzhouMapCfg.json",
+      "pattern": "pattern0",
+      "loaded": true
+    },
+    {
+      "key": "shijiazhuangMapCfg",
+      "ecode": "0571",
+      "cityName": "石家庄",
+      "mapType":"base",
+      "url": "./config/shijiazhuangMapCfg.json",
+      "pattern": "pattern0",
+      "loaded": true
+    },
+    {
+      "key": "xiangtanMapCfg",
+      "ecode": "0091",
+      "cityName": "湘潭",
+      "mapType":"base",
+      "url": "./config/xiangtanMapCfg.json",
+      "pattern": "pattern0",
+      "loaded": true
+    },
+    {
+      "key": "zhaoqingMapCfg",
+      "ecode": "0513",
+      "cityName": "肇庆",
+      "mapType":"base",
+      "url": "./config/zhaoqingMapCfg.json",
+      "pattern": "pattern0",
+      "loaded": true
+    },
+    {
+      "key": "zhuzhouMapCfg",
+      "ecode": "0022",
+      "cityName": "株洲",
+      "mapType":"base",
+      "url": "./config/zhuzhouMapCfg.json",
+      "pattern": "pattern0",
+      "loaded": true
+    },
+    {
+      "key": "changshaMapCfg",
+      "ecode": "0082",
+      "cityName": "长沙",
+      "mapType":"base",
+      "url": "./config/changshaMapCfg.json",
+      "pattern": "pattern0",
+      "loaded": true
+    }
+  ],
+  "onload": {
+    "main": [
+      {
+        "toolKey": "INDEX",
+        "name": "综合集成首页",
+        "params": ""
+      }
+    ],
+    "map": [
+      {
+        "toolKey": "MAP_SWITCH",
+        "name": "地图切换",
+        "params": ""
+      },
+      {
+        "toolKey": "MAP_TOOLBAR",
+        "name": "地图工具栏",
+        "params": ""
+      }
+    ]
+  },
+  "default": {
+    "searchType": "client",
+    "baiduCityId": "218",
+    "streetView": "tencent"
+  }
+}

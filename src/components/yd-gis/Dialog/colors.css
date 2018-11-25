@@ -1,0 +1,26 @@
+@value primary: #2196f3;
+@value gray: #d4d6da;
+@value black: #333333;
+
+@value primary-1: #1384de;
+@value arrow: #8e8e8e;
+
+/* button */
+.button {
+  color: white;
+  background-color: primary;
+}
+
+.button:hover {
+  color: white;
+  background-color: primary-1;
+}
+
+.buttonWhite {
+  color: primary-1;
+}
+
+.buttonWhite:hover {
+  color: white;
+  background-color: primary;
+}

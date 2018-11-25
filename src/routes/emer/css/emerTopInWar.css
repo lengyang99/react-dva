@@ -1,0 +1,109 @@
+#top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background-image: url(../../../../public/images/emer/titleBottomBlock.png);
+  z-index: 1;
+  line-height: 45px;
+}
+
+#top img {
+  position: relative;
+  top: -3px;
+}
+
+#top #name {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  margin-left: 35px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#Date {
+  display: inline-block;
+  padding-left: 8px;
+  color: #fff;
+}
+
+#top #name #date {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+#top #name #timer {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  margin-left: 37px;
+  font-size: 40px;
+  color: #f00;
+}
+
+#top #info {
+  position: absolute;
+  top: 0;
+  right: 230px;
+  font-size: 14px;
+  line-height: 45px;
+  margin-right: 40px;
+}
+
+#top #info a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#top #info #date {
+  color: #fff;
+  display: inline-block;
+  margin-right: 35px;
+}
+
+#top #btn {
+  position: absolute;
+  top: 10px;
+  right: 110px;
+  width: 138px;
+  height: 28px;
+  line-height: 28px;
+  color: #1890ff;
+  text-align: right;
+  box-sizing: border-box;
+  padding-right: 10px;
+  font-size: 12px;
+  background: url(../../../../public/images/emer/contingencyPlan.png) no-repeat;
+  background-position: 10px center;
+  border: 1px solid #1890ff;
+  border-radius: 4px;
+}
+
+#top #goNormal {
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  right: 53px;
+  width: 40px;
+  height: 40px;
+  background: url(../../../../public/images/emer/go_normal.png) no-repeat;
+}
+
+#top #goNormal:hover {
+  opacity: 0.75;
+}
+
+#top #StepsClass{
+  background: #fff;
+}
+
+.select {
+  background: none;
+  border: none;
+  outline: none;
+  width: 90px;
+}

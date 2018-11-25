@@ -1,0 +1,17 @@
+.emerEventAddForm {
+  margin: 10px;
+}
+
+.emerEventAddItem {
+  margin-bottom: 3px;
+}
+
+.emerEventAddLabel {
+  display: inline-block;
+  width: 90px;
+  text-align: center;
+}
+
+.emerEventAddBtn {
+  text-align: center;
+}

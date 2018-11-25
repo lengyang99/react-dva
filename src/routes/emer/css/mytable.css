@@ -1,0 +1,59 @@
+.mytable {
+    display: flex;
+    flex-direction: column;
+}
+
+.tclass {
+    flex-grow: 1;
+}
+
+.tclass > table {
+    width: 100%;
+    /* border: 1px solid wheat; */
+}
+
+.tclass > table > thead > tr > td {
+    height: 32px;
+    font-size: 14px;
+    padding: 0 5px;
+    border-bottom: 1px solid #1890ff;
+    background-color: #0d2047;
+    color: white;
+}
+
+.tclass > table > tbody > tr {
+    height: 32px;
+    border-bottom: 1px solid #1890ff;
+    color: white;
+}
+
+/* .tclass > table > tbody > tr:nth-of-type(1){
+    background-color: #0d2047;
+} */
+
+/* .tclass > table > tbody > tr:nth-of-type(2n){
+    background-color: #346285;
+}
+
+.tclass > table > tbody > tr:nth-of-type(2n + 1){
+    background-color: #023b66;
+} */
+
+.tclass > table > tbody > tr > td {
+    /* height: 20px; */
+    font-size: 14px;
+    padding: 0 5px;
+}
+
+.tclass > table > tbody > tr:hover {
+    background-color: #0f5090;
+}
+
+.pclass {
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: flex-end;
+    margin-top: 2px;
+}

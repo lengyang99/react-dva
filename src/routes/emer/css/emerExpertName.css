@@ -1,0 +1,14 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .flex > span {
+    margin-right: 23px;
+    margin-bottom: 20px;
+  }
+
+  .doubleRow {
+    background-color: #f9f9f9;
+  }

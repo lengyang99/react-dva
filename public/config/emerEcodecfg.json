@@ -1,0 +1,69 @@
+{
+  "pattern0": {
+    "mode": "0",
+    "index": {
+      "location": {"x": 116.715873, "y": 39.499353},
+      "mapcfgkey": "lfBaiduMap",
+      "annotation": "地图初始定位点，地图配置文件名"
+    },
+    "emerVerify": {
+      "getLine": "/dgPipeClick/arcgis/rest/services/xagis/LF0011_GW_BD_D_BLUE/MapServer/identify",
+      "annotation": "管线点击查询管段信息的服务路径"
+    },
+    "myTable": {
+      "minX": 116, "minY": 39, "maxX": 118, "maxY": 40.5,
+      "annotation": "区域坐标限制范围"
+    },
+    "emerStartOrder": {
+      "handleAddEmerOrder": false,
+      "getEmerOrganization": "/proxy/emer/organization/getEmerOrganization",
+      "annotation": "应急人员组织解析方式, 应急组织结构查询地址getEmerOrg"
+    },
+    "emerRightNav": {
+      "isHasEmerPlan": false,
+      "annotation": "是否有应急专家"
+    },
+    "emerEventAdd": {
+      "isHasController": true,
+      "annotation": "是否有控制人员"
+    },
+    "emerReport": {
+      "getEmerReport": "/proxy/emer/report/getEmerReport",
+      "annotation": "应急报告服务地址"
+    },
+    "emerMonitor": {
+      "isHasMonitor": true,
+      "annotation": "是否显示监测点"
+    }
+  },
+  "pattern1": {
+    "mode": "1",
+    "index": {
+      "location": {"x": 113.745572, "y": 23.039295},
+      "mapcfgkey": "dgBaiduMap"
+    },
+    "emerVerify": {
+      "getLine": "/dgPipeClick/arcgis/rest/services/dgxa/dggw_bd/MapServer/identify"
+    },
+    "myTable": {
+      "minX": 113, "minY": 22, "maxX": 114.5, "maxY": 23.5
+    },
+    "emerStartOrder": {
+      "handleAddEmerOrder": true,
+      "getEmerOrganization": "/proxy/emer/organization/getEmerOrganization"
+    },
+    "emerRightNav": {
+      "isHasEmerPlan": true
+    },
+    "emerEventAdd": {
+      "isHasController": true
+    },
+    "emerReport": {
+      "getEmerReport": "/proxy/emer/report/generateEmerReport"
+    },
+    "emerMonitor": {
+      "isHasMonitor": false,
+      "annotation": "是否显示监测点"
+    }
+  }
+}

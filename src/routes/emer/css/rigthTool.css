@@ -1,0 +1,19 @@
+#rightTool {
+  position: absolute;
+  top: 96px;
+  right: 97px;
+  width: 47px;
+  height: 245px;
+  background-image: url(../../../../public/images/emer/rightTool/BG.png);
+  text-align: center;
+  border-radius: 7px;
+  z-index: 1;
+}
+
+#rightTool img {
+  margin-bottom: -1.8px;
+}
+
+#rightTool img:first-child {
+  margin-top: 5px;
+}

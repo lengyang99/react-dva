@@ -1,0 +1,74 @@
+.state-item {
+  margin-left: 5px;
+  &:first-child {
+    margin-left: 0;
+  }
+  cursor: pointer;
+  & > span {
+    display: inline-block;
+    &:before {
+      display: inline-block;
+      width: 10px;
+      height: 100%;
+      font-weight: 800;
+      text-align: center;
+      content: "▪";
+    }
+  }
+}
+
+@wh: 120px;
+.field-block {
+  display: inline-block;
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+  .select {
+    height: 24px;
+    width: @wh;
+  }
+  .input {
+    width: @wh;
+  }
+}
+.pagination {
+  margin: 20px;
+  ul li {
+    position: relative;
+    left: 42%;
+  }
+}
+
+.font-style {
+  font-size: 13px;
+  margin-left: 10px;
+  margin-right: 12px;
+}
+
+
+.btUp{
+  position: relative;
+  top: -6px;
+  left: 2px;
+  display: inline-block;
+  border: 4px solid #fff;
+  border-bottom: 4px solid #898989;
+  cursor: pointer;
+  &:hover{
+    border-bottom: 4px solid #6dc1f1;
+  }
+}
+
+.btDown{
+  position: relative;
+  top: 5px;
+  left: -6px;
+  display: inline-block;
+  border: 4px solid #fff;
+  border-top: 4px solid #898989;
+  cursor: pointer;
+  &:hover{
+    border-top: 4px solid #6dc1f1;
+  }
+}

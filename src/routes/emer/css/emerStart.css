@@ -1,0 +1,39 @@
+.emerStartFormItem_2 {
+  margin-bottom: 3px;
+}
+
+.emerStartFormItem_1 {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.emerStartFormItem_2 span, .emerStartFormItem_1 span {
+  display: inline-block;
+}
+
+.emerStartFormItem_2 span:first-child {
+  width: 160px;
+}
+
+.emerStartFormItem_2 span label, .emerStartFormItem_1 span label {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.emerStartFormBtn {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+a#a_preview {
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  color: #fff;
+  background-color: #1890FF;
+  text-align: center;
+  line-height: 25px;
+  font-size: 11px;
+  text-decoration: none;
+  margin-left: 10px;
+}

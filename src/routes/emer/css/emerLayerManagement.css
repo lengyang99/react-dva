@@ -1,0 +1,91 @@
+.leftView {
+  position: absolute;
+  top: 53px;
+  left: 8px;
+  width: 357px;
+  height: 170px;
+  border: 15px solid #FFFFFF;
+  border-image: url(../../../../public/images/emer/cardBottomBlock.png) 15 15 17 15 fill round;
+  color: #FFFFFF;
+  z-index: 1;
+}
+
+.leftViewTitle {
+  position: absolute;
+  top: -13px;
+  left: -13px;
+  width: 353px;
+  height: 36px;
+  background-image: url(../../../../public/images/emer/title.png);
+  font-size: 14px;
+  text-align: left;
+  padding-left: 20px;
+  background-size: 100% 100%;
+  line-height: 36px;
+}
+
+#layerManagementItem {
+  position: absolute;
+  top: 28px;
+  left: 4px;
+  width: 320px;
+  font-size: 11px;
+}
+
+#layerManagementItem table {
+  border-collapse: collapse;
+  width: 310px;
+  margin-left: -13px;
+}
+
+.spaceTd {
+  width: 25px;
+}
+
+.spaceTr {
+  height: 10px;
+}
+
+.checkboxWrapper {
+  display: inline-block;
+}
+
+.checkboxInput {
+  display: none;
+}
+
+.checkboxReplace {
+  display: inline-block;
+  background-color: #072957;
+  border: 1px solid rgba(138, 149, 167, 0.8);
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  margin-top: -5px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.layerName {
+  display: inline-block;
+  height: 11px;
+  line-height: 11px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkboxInput:checked + .checkboxReplace:after {
+  background-image: url(../../../../public/images/emer/layerCheck.png);
+  content: "";
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  margin-top: -1px;
+  margin-left: -1px;
+  position: relative;
+  top: -1px;
+}

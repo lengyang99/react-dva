@@ -1,0 +1,114 @@
+.textOverflow {
+  display: inline-block;
+  width: 280px;
+  height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  white-space: nowrap;
+}
+.metaList{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-y: auto;
+  position: relative;
+}
+
+.listItem{
+  align-items: center;
+  display: flex;
+  border-bottom:1px solid #e8e8e8;
+  padding:10px;
+}
+.itemMeta{
+  align-items: flex-start;
+  display: flex;
+  font-size:0;
+}
+.metaAvatar{
+  flex:0;
+  margin-right:16px;
+  white-space: nowrap;
+
+}
+
+.avatarImage{
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+}
+.metaAvatar>img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  vertical-align: middle;
+}
+.metaContent{
+  flex: 1 0;
+  display: block;
+}
+.metaTitle{
+  font-weight:400;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.metaDescription{
+  font-size: 12px;
+  line-height: 22px;
+}
+.itemContent{
+  display: flex;
+  flex: 1;
+  //justify-content:flex-end;
+
+}
+.listContent{
+  font-size: 0;
+}
+.itemContentDiv{
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 20px;
+  min-width:50px;
+}
+.itemContentDivSpan{
+  font-weight:400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.itemContentDivP{
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+.itemAction{
+  flex: 0 0 auto;
+  margin-left: 24px;
+  list-style: none;
+  padding-right: 10px;
+}
+.itemActionLi{
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 8px;
+  position: relative;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+}
+.itemActionLi:first-child{
+  padding-left: 0;
+}
+.pages{
+  text-align: right;
+  padding:10px;
+}
+
+

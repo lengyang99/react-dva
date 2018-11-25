@@ -1,0 +1,16 @@
+<% htmlWebpackPlugin.options.headScripts = htmlWebpackPlugin.options.headScripts || [] %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome|IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>智慧运营</title>
+  <script src="config/client.js"></script>
+  <% for (item of htmlWebpackPlugin.options.headScripts) { %>
+  <script src="<%= item %>"></script>
+  <% } %>
+<body>
+  <div id="root"></div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+.card {
+  text-decoration: none;
+  /*去掉前面的圆点*/
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.card>li {
+  display: inline-block;
+  min-height: 138px;
+  width: 360px;
+  margin: 10px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  /*padding:0 10px 10px 10px;*/
+}
+
+.wrap {
+  float: left;
+  /* 自适应内容宽度 */
+  position: relative;
+  left: 50%;
+}
+
+.inner {
+  position: relative;
+  left: -50%;
+}
+
+.more-arrow {
+  height: 20px;
+  width: 20px;
+  transform: rotate(90deg);
+}
+
+.more {
+  /*animation: change 3s  ease-in  infinite ; */
+  font-size: 12px;
+  color: #111;
+  width: 400px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.more:hover {
+  font-weight: bold;
+}
+
+@keyframes change {
+  0% {
+    text-shadow: 0 0 1px #111
+  }
+  50% {
+    text-shadow: 0 0 2px #111
+  }
+  100% {
+    text-shadow: 0 0 1px #111
+  }
+}
+
+.extra {
+  width: 20px;
+  display: inline-block;
+  height: 14px;
+  background: url(./task_detail.png) no-repeat;
+}

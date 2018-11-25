@@ -1,0 +1,332 @@
+.menu {
+    line-height: 24px !important;
+    height: 24px !important;
+    margin: 2px !important;
+}
+
+.fileForm{
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 2px;
+    box-sizing: border-box;
+    &_header{
+        border-bottom: 1px solid #e8e8e8;
+        >div{
+        text-align: center;
+        line-height: 40px;
+        font-weight: 800;
+        }
+    }
+    &_filter{
+        line-height: 40px;
+        font-size: 26px;
+        text-align: center;
+        color: #40a9ff;
+    }
+    >div {
+        &[class='ant-row']:hover {
+        background: #40a9ff50;
+        }
+        >div>div {
+        margin: 0 0 2px 0;
+        div[class='ant-form-explain'] {
+            white-space: pre-wrap;
+        }
+        }
+    }
+}
+
+.panel {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    &-item {
+        position: relative;
+
+        >div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            &::-webkit-scrollbar { display: none }
+        }
+    }
+
+    &-row{
+        flex-direction: column;
+
+        >div {
+            width: 100%;
+        }
+    }
+
+    &-column{
+        flex-direction: row;
+
+        >div {
+            height: 100%;
+        }
+    }
+  }
+
+.spin {
+    position: absolute;
+    background: rgba(155, 155, 155, 0.05);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+
+    > div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.dialog {
+    padding: 0;
+    pointer-events:none;
+
+    &_mask{
+        pointer-events:auto !important;
+    }
+
+    &_title{
+        padding: 0 10px;
+        line-height: 42px;
+        color: white;
+
+        &_min {
+            color: white;
+            height: 42px;
+            display: flex;
+            flex-direction: row;
+            line-height: 42px;
+            justify-content: space-between;
+
+            >div {
+                flex-grow: 1;
+                >div {
+                    display: inline-block;
+                    padding: 0 10px;
+                }
+            }
+
+            >i {
+                line-height: 42px;
+                width: 42px;
+                height: 42px;
+                cursor: pointer;
+                z-index: 1000;
+                &:hover {
+                    background: #ff4d4f;
+                }
+            }
+        }
+    }
+
+    &_min {
+        pointer-events:auto !important;
+        padding-bottom: 0;
+
+        div[class='ant-modal-header']{
+            border-radius: 4px;
+            border: 0;
+        }
+
+        div[class='ant-modal-body']{
+            padding: 0 !important;
+            > div {
+              display: none;
+            }
+        }
+    }
+
+    &_loading {
+        position: absolute;
+        background: rgba(155, 155, 155, 0.05);
+        top: 43px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+      > div {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-items: center;
+      }
+    }
+
+    div[class*='ant-modal']{
+        padding: 0;
+        pointer-events: auto;
+        user-select: none;
+        transition: height 0.1s, width 0.1s;
+    }
+
+    div[class='ant-modal-header']{
+        height: 43px;
+        padding: 0px;
+        border-bottom: 0;
+        background: #2196f3;
+        color: white;
+    }
+
+    div[class='ant-modal-body']{
+        padding: 8px;
+    }
+
+    div[class='ant-modal-title']{
+        cursor: move;
+        user-select: none;
+    }
+
+    button[class='ant-modal-close']{
+        border-radius: 0 4px 0 0;
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        cursor: pointer;
+        color: white;
+
+        &:hover {
+            background: #ff4d4f;
+        }
+
+        >span {
+            width: inherit;
+            height: inherit;
+            line-height: inherit;
+        }
+    }
+  }
+
+.vertical_center_modal {
+    text-align: center;
+    white-space: nowrap;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        width: 0;
+    }
+
+    > div {
+        display: inline-block;
+        vertical-align: middle;
+        top: 0;
+        text-align: left;
+    }
+}
+
+.drag{
+    position: fixed;
+    display: block !important;
+    z-index: 999999;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #40a9ff;
+    cursor: move;
+    background: rgba(217, 217, 217, 0.2);
+}
+
+.table {
+    &-self {
+        &-def {
+          >div {
+            >div {
+              >div {
+                border-width: 0 0 1px 0;
+                border-radius: 0;
+                > div {
+                  border-right: 0 !important;
+                  table {
+                    padding: 0 !important;
+                    td {
+                      height: 32px;
+                    }
+                  }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-content{
+        border: 1px solid  #e8e8e8;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    &-page{
+        text-align: right;
+        padding-top: 4px;
+    }
+}
+
+.tab {
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+
+    &_bottom {
+        > div > div:first-child {
+            flex: 1;
+
+            > div {
+                position: relative;
+
+                > div {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 2px;
+                }
+            }
+        }
+    }
+
+    &_top {
+        >div > div:last-child {
+            flex: 1;
+
+            > div {
+                position: relative;
+
+                > div {
+                    position: absolute;
+                    top: 2px;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+}

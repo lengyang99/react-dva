@@ -1,0 +1,89 @@
+{
+  "centerx": -1,
+  "centery": -1,
+  "initlevel": -1,
+  "extent": {
+    "xmin": 116.528451,
+    "ymin": 39.42151,
+    "xmax": 116.915944,
+    "ymax": 39.602763
+  },
+  "isxy": 0,
+  "isMapTool" :0,
+  "wkid": 3857,
+  "isJwd": 0,
+  "overview": 0,
+  "scale": 0,
+  "position": 1,
+  "positionPrefix": {
+    "x": "x",
+    "y": "y"
+  },
+  "map_base": [{
+    "group": "m_1",
+    "visible": 1,
+    "maps": [{
+      "id": "lf_base_map",
+      "url": "http://10.39.13.38:8022/ServiceEngine/rest/services/lfBDRoad/MapServer",
+      "type": "tiled",
+      "name": "电子地图",
+      "visible": 1,
+      "extent": {
+        "xmin": 116.528451,
+        "ymin": 39.42151,
+        "xmax": 116.915944,
+        "ymax": 39.602763
+      },
+      "params": {
+        "imgurl": "",
+        "legendurl": "",
+        "maxscale": "",
+        "minscale": ""
+      }
+    }]
+  }],
+  "map_service": [{
+    "group": "n_1",
+    "visible": 1,
+    "mutexMapIds": [["gw_gl", "gw_gj", "gw_gc", "gw_pressure"]],
+    "maps": [{
+      "id": "net_lfjsd",
+      "url": "http://10.39.1.106:6080/arcgis/rest/services/xagis/LF0011_GW_BD_D_BLUE/MapServer",
+      "type": "dynamic",
+      "name": "廊坊管网",
+      "visible": 1,
+      "layerInfos": [{
+        "id": "7",
+        "name": "全部",
+        "fields": [
+          {"first": "EQPTCODE", "firstDesc": "设备编码"},
+          {"first": "PIPELENGTH", "firstDesc": "管长"},
+          {"first": "PIPEDIAM", "firstDesc": "管径"},
+          {"first": "MATERIAL", "firstDesc": "材质"},
+          {"first": "PRESSURERATING", "firstDesc": "压力级别"},
+          {"first": "WALLTHICKNESS", "firstDesc": "壁厚"},
+          {"first": "EQPTSTATUS", "firstDesc": "设备状态"}
+        ]
+      }],
+      "params": {
+        "maxscale": "200000",
+        "minscale": "2000",
+        "snapLayers": "",
+        "layersName": []
+      }
+    }]
+  }],
+  "map_thematic": [{
+    "group": "t_1",
+    "visible": 0,
+    "maps": [{
+      "id": "thematic_ds",
+      "url": "http://192.168.8.173:6080/arcgis/rest/services/hpzh/hpdsdd/MapServer",
+      "type": "tiled",
+      "name": "有线",
+      "params": {
+        "legendurl": "/module/layerShowManager/images/legend_wsgw.png"
+      }
+    }]
+  }]
+}

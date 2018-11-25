@@ -1,0 +1,110 @@
+@import "~antd/lib/style/themes/default.less";
+.field-block{
+    display: inline-block;
+    margin:10px 10px 10px 10px;
+    .select{
+        width: 120px;
+    }
+}
+.button {
+    margin-top: 5px;
+    margin-left: 5px;
+    float: right;
+  }
+.spanMsg{
+    margin: 0px 10px 0 10px;
+    float: right;
+}
+.dutyStyle1{
+    margin-top: 22px;
+}
+.dutyStyle2{
+    padding: 6px;
+}
+.dutyStyle3{
+    padding: 0px
+}
+.modal{
+    :global {
+        .ant-modal-header {
+            background: #169BD5;
+        }
+        .ant-modal-body {
+            padding: 24px 0 24px 0;
+        }
+    }
+    // :global {
+    //     .ant-modal-close-x{
+    //         width: 50px;
+    //         line-height: 40px;
+    //     }
+    // }
+}
+.calendar{
+    :global {
+        .ant-popover-title {
+            padding: 0 
+        }
+        .ant-popover-inner-content{
+            padding: 0
+        }
+    }
+    :global {
+        .ant-fullcalendar-fullscreen {
+            overflow: hidden;
+            overflow-y: hidden;
+        }
+         .ant-fullcalendar-content {
+            overflow: hidden;
+            overflow-y: hidden;
+        }
+    }
+    :global {
+        .ant-fullcalendar-fullscreen .ant-fullcalendar-header .ant-radio-group{
+            display: none;
+        }
+        .ant-fullcalendar-fullscreen .ant-fullcalendar-last-month-cell{
+            visibility:hidden;
+        }
+        .ant-fullcalendar-table .ant-fullcalendar-next-month-btn-day{
+            display: none;
+        }
+    
+        .ant-fullcalendar-fullscreen .ant-fullcalendar-value{
+            background: #F5F5F5 !important;
+        }
+        .ant-fullcalendar-fullscreen .ant-fullcalendar-date {
+            padding: 0 !important;
+        }
+
+        .ant-fullcalendar-column-header .ant-fullcalendar-column-header-inner{
+            font-weight: bold;
+        }
+    }
+}
+
+.events {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} 
+
+.textOverflow {
+    // display: inline-block;
+    width: auto;
+    max-width: 260px;
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+}
+.textOverflowS {
+    // display: inline-block;
+    width: auto;
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+}

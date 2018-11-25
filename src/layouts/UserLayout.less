@@ -1,0 +1,66 @@
+@import "~antd/lib/style/themes/default.less";
+
+.south {
+  min-height: 104px;
+  padding: 30px 0 14px 0;
+  background: #fff url('/images/login_hd.png') no-repeat 10% center;
+}
+
+.bg {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#3de7ff, endcolorstr=#2f8aff, gradientType=1);
+  background: #2f8aff; /* 一些不支持背景渐变的浏览器 */
+  background: linear-gradient(to right, #3de7ff, #2f8aff);
+  & > img {
+    max-height: 77vh;
+  }
+}
+
+.ad {
+  position: absolute;
+  left: calc(~"50% - 476px");
+  top: 170px;
+}
+
+.top {
+  text-align: center;
+}
+
+.header {
+  height: 44px;
+  line-height: 44px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  height: 44px;
+  vertical-align: top;
+  margin-right: 16px;
+}
+
+.title {
+  font-size: 33px;
+  color: @heading-color;
+  font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  position: relative;
+  top: 2px;
+}
+
+.desc {
+  font-size: @font-size-base;
+  color: @text-color-secondary;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}

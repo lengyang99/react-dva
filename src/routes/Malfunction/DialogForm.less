@@ -1,0 +1,76 @@
+@import "../../styles/variable";
+.form__error__message {
+  margin: 0 0 0 56px;
+  padding: 5px 0 0 5px;
+  color: @warnColor;
+}
+.malfunction {
+  &__form {
+    &__item {
+      width: 700px;
+      margin-bottom: 16px;
+    }
+
+    &__title {
+      border-left: 4px solid @primaryColor;
+      padding-left: 10px;
+    }
+
+    &__item__sub {
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: top;
+    }
+
+    &__label {
+      display: inline-block;
+      margin-right: 15px;
+      width: 40px;
+      text-align: right;
+
+      &__full {
+        display: inline-block;
+        width: 70px;
+        margin-right: 15px;
+        text-align: right;
+      }
+    }
+
+    &__input {
+      display: inline-block;
+
+      &__left {
+        width: 200px;
+      }
+
+      &__right {
+        width: 150px;
+      }
+
+      &__full {
+        display: inline-block;
+        width: 385px;
+      }
+    }
+  }
+
+  &__info {
+    width: 100%;
+
+    &__item {
+      display: inline-block;
+      width: 50%;
+      margin-bottom: 16px;
+    }
+
+    &__label {
+      display: inline-block;
+      margin-right: 14px;
+    }
+
+    &__input {
+      display: inline-block;
+      width: 108px;
+    }
+  }
+}

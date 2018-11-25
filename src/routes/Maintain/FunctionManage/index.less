@@ -1,0 +1,78 @@
+@import "~antd/lib/style/themes/default.less";
+
+.valve{
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	.valve_map{
+		width: 100%;
+		height: 735px;
+		position: absolute;
+		z-index: 0;
+	}
+	.valve_Informationbox{
+		width: 100px;
+		height: 50px;
+		border: 1px solid #000;
+		background-color: #00819D;
+		position: absolute;
+		top: 80px;
+		left:600px;
+		color: #fff;
+		font: 14px solid "微软雅黑";
+		p{
+			margin-left: 15px;
+			margin-top: 5px;
+		}
+	}
+	.map_set{
+		position: absolute;
+		top:10px;
+		left:600px;
+		width: 100px;
+		color: #ccc;
+	}
+	.valve_detail{
+		width: 550px;	
+		height: 735px;
+		border:2px solid #ccc;
+		position: absolute;
+		left:2px;
+		background: #fff;
+		
+		
+		.valve_situation{
+			height: auto;
+		}
+		.valve_table{
+			height:auto;
+			.valve_button{
+				margin: 10px;
+				float: right;
+			}
+
+		}
+
+			
+	}
+
+	.valve_feedback{
+		width: 260px;
+		height:735px;
+		background: #fff;
+		border:2px solid #ccc;
+		position: absolute;
+		top:0;
+		right:-260px;
+
+		.valve_back{
+			cursor:pointer;
+			height: 30px;
+			margin: 4px 0 0 200px;
+		}
+	}
+
+}
+
+

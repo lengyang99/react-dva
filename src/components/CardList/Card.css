@@ -1,0 +1,169 @@
+.card {
+  display: inline-block;
+}
+
+.card:hover {
+  border-color: #1890ff;
+}
+
+.card-head {
+  height: 70px;
+  line-height: 50px;
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  zoom: 1;
+  display: flex;
+  margin-bottom: 2px;
+}
+
+/* .head-avatar {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  border-radius: 16px;
+  background-color: #1890ff;
+  color: #fff;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.head-title {
+  font-size: 14px;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 500;
+  display: inline-block;
+  flex: 1;
+} */
+
+.head-title {
+  position: relative;
+  flex: 1;
+}
+
+.head-title-area, .head-title-manager, .head-title-name {
+  position: absolute;
+  height: 14px;
+  line-height: 14px;
+  font-size: 14px;
+}
+
+.head-title-area {
+  border-left: 4px solid #1890ff;
+  padding-left: 8px;
+}
+/*
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+ */
+.head-title-name {
+  top: 45px;
+  color: rgba(0, 0, 0, 0.65);
+  padding-left: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 240px;
+}
+.head-title-manager {
+  top: 23px;
+  color: #1890ff;
+  padding-left: 12px;
+}
+
+.foot-extra, .head-extra {
+  float: right;
+  text-align: right;
+  margin-left: auto;
+  font-size: 14px;
+}
+
+.head-extra {
+  display: inline-block;
+  height: 38px;
+  width: 38px;
+  line-height: 38px;
+  border-radius: 19px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.progress-circle {
+  border: 2px solid;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.progress-into {
+  display: inline-block;
+}
+
+.progress-progress {
+  margin: 0px 10px;
+  display: inline-block;
+  height: 5px;
+  width: 130px;
+}
+
+.progress-content {
+  height: 32px;
+  line-height: 32px;
+}
+
+.card-foot {
+  width: 100%;
+  /*display: inline-block;*/
+  height: 32px;
+  line-height: 32px;
+  background-color: #f1f3f9;
+  padding: 0 10px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.foot-body {
+  text-overflow: ellipsis;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 500;
+  display: inline-block;
+  flex: 1;
+}
+
+/*进度条整体自动添加滚动条*/
+
+.process-box {
+  height: 99px;
+  overflow: auto;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
+.process-box::-webkit-scrollbar {
+  width: 8px;
+  background-color: #FFFFFF;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+.process-box::-webkit-scrollbar-track {
+  background-color: #FFFFFF;
+}
+
+/*定义滑块 内阴影+圆角*/
+
+.process-box::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #B8B8B8;
+}

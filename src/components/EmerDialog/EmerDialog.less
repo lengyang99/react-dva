@@ -1,0 +1,67 @@
+.emerDialog {
+  border: 17px solid #fff;
+  border-image: url(/images/emer/cardBottomBlock.png) 17 fill round;
+  color: #fff;
+}
+
+/*.emerDialog .tableHead {
+  background-color: #1f3b66;
+}*/
+
+.emerDialogTitle {
+  position: relative;
+  top: -15px;
+  left: -17px;
+  font-size: 14px;
+  width: calc(100% + 34px);
+  height: 36px;
+  line-height: 36px;
+  padding-left: 16px;
+  background-image: url(/images/emer/title.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+}
+
+.titleRight {
+  height: 14px;
+  margin: 0 15px;
+}
+
+.bodyMain {
+  width: calc(100% + 14px);
+  position: relative;
+  left: -7px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: calc(100% - 50px);
+  box-sizing: box-border;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.bodyMain::-webkit-scrollbar {
+  width: 5px;
+  background-color: #FFFFFF;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+.bodyMain::-webkit-scrollbar-track {
+  background-color: rgba(7, 41, 88, 1);
+}
+
+/*定义滑块 内阴影+圆角*/
+.bodyMain::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #8A95A7;
+}
+
+//#emer .ant-table-placeholder {
+//    color: #fff;
+//    background-color: #1f3b66;
+//  }
+
+

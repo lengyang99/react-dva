@@ -1,0 +1,9 @@
+#emerEventDetails {
+  font-size: 14px;
+}
+
+#emerEventDetails table tr td:first-child {
+  width: 300px;
+}
+
+

@@ -1,0 +1,124 @@
+@import "~antd/lib/style/themes/default.less";
+
+.main {
+  width: 376px;
+  min-height: 327px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 104px;
+  background-color: #fff;
+  padding: 25px 40px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 11px 1px;
+  :global {
+    .ant-form-item {
+      margin-bottom: 22px;
+    }
+    .ant-input {
+      background-color: #f4f9fa;
+    }
+  }
+
+  .text {
+    color: #2b9aff;
+    font-size: 20px;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+
+  .prefixIcon {
+    font-size: 14px;
+    color: #1890ff;
+  }
+
+  .getCaptcha {
+    display: block;
+    width: 100%;
+  }
+
+  .additional {
+    text-align: left;
+
+    .forgot {
+      float: right;
+    }
+
+    .submit {
+      width: 100%;
+      margin-top: 3px;
+      font-size: 16px;
+    }
+
+    :global {
+      .ant-form-item-control {
+        line-height: 22px;
+      }
+    }
+  }
+
+  .iconAlipay {
+    background-position: -24px 0;
+
+    &:hover {
+      background-position: 0 0;
+    }
+  }
+
+  .iconTaobao {
+    background-position: -24px -24px;
+
+    &:hover {
+      background-position: 0 -24px;
+    }
+  }
+
+  .iconWeibo {
+    background-position: -24px -48px;
+
+    &:hover {
+      background-position: 0 -48px;
+    }
+  }
+
+  .other {
+    text-align: left;
+    margin-top: 24px;
+    line-height: 22px;
+
+    .register {
+      float: right;
+    }
+  }
+
+  .foot {
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    border-bottom: 0;
+    background-color: #f3f3f3;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 0 0 6px 6px;
+    padding: 0 20px;
+    font-size: 14px;
+    .version {
+      text-align: left;
+    }
+    .device {
+      color: #000;
+      float: right;
+      .mobile {
+        color: #49ae36;
+        font-size: 16px;
+        margin-right: 5px;
+      }
+      .pad {
+        color: #1891ff;
+        font-size: 16px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

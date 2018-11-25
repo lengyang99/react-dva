@@ -1,0 +1,11 @@
+.recoverGasItem {
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+.recoverGasItem span:first-child {
+  display: inline-block;
+  width: 105px;
+  margin-right: 5px;
+  font-size: 14px;
+}

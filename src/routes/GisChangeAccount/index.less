@@ -1,0 +1,49 @@
+//SearchPanel 样式
+.field-block {
+  display: inline-block;
+  margin: 0px 15px 10px 15px;
+}
+.field-block2 {
+  display: inline-block;
+  margin: 10px 15px 10px 15px;
+  .input {
+    width: 280px;
+  }
+}
+.search-button{
+        margin-right: 10px;
+}
+//index 样式
+.button{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.pagination{
+    position: absolute;
+    left: 2%;
+}
+//table 样式
+.table{
+    ul{
+    margin: 20px;
+  }
+}
+.state-item {
+  margin-left: 10px;
+  &:first-child {
+    margin-left: 0;
+  }
+  cursor: pointer;
+  & > span {
+    display: inline-block;
+    &:before {
+      display: inline-block;
+      width: 18px;
+      height: 100%;
+      font-weight: 800;
+      text-align: center;
+      content: "·";
+      //background-color: red;
+    }
+  }
+}
